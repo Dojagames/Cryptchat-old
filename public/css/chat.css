@@ -1,0 +1,284 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: #FFF;
+}
+
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+}
+
+body{
+    display: block;
+}
+
+
+/* sections */
+
+/* Topbar */
+
+#topBar{
+    display: flex;
+    justify-content: left;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
+
+.topBtn:hover{
+    cursor: pointer;
+}
+
+#topBackBtn{
+    align-self: center;
+    margin-left: 20px;
+}
+
+#chatVerticalBar {
+    display: none;
+}
+
+#horizontalBar {
+    display: none;
+}
+
+.profileImg{
+    align-self: center;    
+    padding-left: 20px;
+}
+
+.profileImg img{
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.topCenterText{
+    width: 600px;
+    align-self: center;
+    margin-left: 25px;
+    padding-bottom: 5px
+}
+
+.topCenterText p{
+    font-size: 45px;
+}
+
+.callIcon{
+    margin-top: 5px;
+    align-self: center;
+    margin-left: calc(100vw - 900px);
+}
+
+
+.drawerIcon{
+    align-self: center;
+    margin-left: 25px;
+}
+
+
+/* Bottom */
+
+#bottomSection{
+    height: calc(100% - 80px);
+}
+
+#chatDrawer{
+    display: block;
+    width: 400px;
+    height: 100%;
+    background-color: rgb(61, 61, 61);
+    float: left;
+}
+
+#chatBox{
+    display: block;
+    width: auto;
+    height: 100%;
+    background-color: rgb(37, 37, 37);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+
+
+/* ChatBox interns */
+.msgWrapper{
+    width: 100%;
+    height: fit-content;
+    display:flow-root;
+}       
+
+.systemMsg p{
+    margin: 5px auto 2% auto;
+    width: fit-content;
+    background-color: rgb(26, 26, 26);
+    color: rgb(255, 133, 19);
+    max-width: 70%;
+    padding: 6px 12px 6px 13px;
+    border-style: hidden;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.date p{
+    text-align: center;
+    margin: 5px auto;
+    width: fit-content;
+    background-color: rgb(26, 26, 26);
+    color: rgb(134, 134, 134);
+    max-width: 50%;
+    padding: 4px 12px 5px 13px;
+    border-style: hidden;
+    border-radius: 13px;
+}
+
+.msgBox{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(16, 17, 37);
+    color: #FFF;
+    margin: 0.5% 3% 0px 3%;
+    width: fit-content;
+    max-width: 60%;
+    padding: 6px 12px 6px 13px;
+    border-style: hidden;
+    border-radius: 13px;
+}
+
+.bufferBox{
+    height: 1.2vh;
+}
+
+.leftBox{
+    float: left;
+}
+
+.rightBox{
+    float: right;
+    background-color: rgb(93, 148, 5);
+}
+
+.rightBox p{
+    color: black;
+}
+
+.rightBox .internText{
+    color: rgb(43, 43, 43);
+}
+
+.internText {
+    padding-top: 7px; /* clean this!!!1! */
+    float: right;
+    font-size: 65%;
+    color: #888;
+    bottom: 0;
+    padding-left: 8px;
+}
+
+
+
+/* chat Drawer */
+
+.chatPrev{
+    height: 80px;
+    width: 100%;
+    background-color: green;
+    border-top:    2px solid  black;
+    border-bottom: 2px solid  black;
+
+    display: flex;
+}
+
+.chatPrev:hover{
+    cursor: pointer;
+}
+
+.prevImg{
+    height: 70px;
+    width: 70px;
+    margin-left: 4%;
+    align-self: center;
+    border-radius: 50%;
+}
+
+.prevTextContainer{
+    height: 100px;
+    align-self: center;
+    margin-left: 4%;
+}
+
+.nameTxt{
+    font-size: 35px;
+    padding-top: 15px;
+}
+
+
+
+
+@media screen and (orientation: portrait) {
+    *{
+        font-size: 32px;
+    }
+
+    #topBar{
+        display: flex;
+        justify-content: left;
+        height: 130px;
+        width: 100%;
+        background-color: black;
+    }
+    
+    #bottomSection{
+        height: calc(100% - 130px);
+    }
+
+
+    #chatDrawer {
+        width: 100%;
+    }
+
+    #chatBox {
+        display: none;
+    }
+
+
+
+    /* chat Drawer */
+    .chatPrev{
+        height: 120px;
+        width: 100%;
+        background-color: green;
+        border-top:    2px solid  black;
+        border-bottom: 2px solid  black;
+    
+        display: flex;
+    }
+    
+    .chatPrev:hover{
+        cursor: pointer;
+    }
+    
+    .prevImg{
+        height: 90px;
+        width: 90px;
+        margin-left: 4%;
+        align-self: center;
+        border-radius: 50%;
+    }
+    
+    .prevTextContainer{
+        height: 100px;
+        align-self: center;
+        margin-left: 4%;
+        margin-bottom: 30px;
+    }
+    
+    .nameTxt{
+        font-size: 45px;
+    }
+}

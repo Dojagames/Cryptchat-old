@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Backup Viewer</title>
+        <link rel="stylesheet" href="/css/chat.css">
+    </head>
+
+    <body>
+        
+        
+        <div id = "topBar">
+            <div id="chatVerticalBar">
+                <div id="topBackBtn" class="topBtn" onclick="openDrawer()">
+                    <img src="/resources/back-inverse.png">
+                </div>
+                <div class="profileImg">
+                    <img src="/resources/test.png">
+                </div>
+                <div class="topCenterText">
+                    <p>Jonas</p>
+                </div>
+                <div class="callIcon topBtn">
+                    <img src="/resources/call-inverse.png">
+                </div>
+                <div class="drawerIcon topBtn">
+                    <img src="/resources/menu-inverse.png">
+                </div>
+            </div>
+
+            <div id="horizontalBar">
+
+            </div>
+
+            <div id="drawerVerticalBar">
+                <input type="file" id="file-selector" accept=".txt" onchange="openFile(event)">
+            </div>
+
+            
+            <!-- <input type="file" id="file-selector" accept=".txt" onchange="openFile(event)"> -->
+        </div>
+        <div id = "bottomSection">
+            <div id = "chatDrawer"> 
+                <!-- <input type="file" id="file-selector" accept=".txt" onchange="openFile(event)"><br>
+                <button onClick="createDiv()">Create Element</button>
+                <div id="main-container"></div> -->
+                <div class="chatPrev" onclick="openChat()"> 
+                    <img src="/resources/test.png" class="prevImg">
+                    <div class="prevTextContainer">
+                        <p class="nameTxt">Jonas</p>
+                        <p class="prevTxt">Hallo, das ist eine Test Nachricht</p>
+                    </div>
+                </div>
+                <div class="chatPrev" onclick="openChat()"> 
+                    <img src="/resources/test.png" class="prevImg">
+                    <div class="prevTextContainer">
+                        <p class="nameTxt">Jonas</p>
+                        <p class="prevTxt">Hallo, das ist eine Test Nachricht</p>
+                    </div>
+                </div>
+                <div class="chatPrev" onclick="openChat()"> 
+                    <img src="/resources/test.png" class="prevImg">
+                    <div class="prevTextContainer">
+                        <p class="nameTxt">Jonas</p>
+                        <p class="prevTxt">Hallo, das ist eine Test Nachricht</p>
+                    </div>
+                </div>
+                <div class="chatPrev" onclick="openChat()"> 
+                    <img src="/resources/test.png" class="prevImg">
+                    <div class="prevTextContainer">
+                        <p class="nameTxt">Jonas</p>
+                        <p class="prevTxt">Hallo, das ist eine Test Nachricht</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div id = "chatBox"></div>
+        </div>
+    
+    </body>
+
+    <script src="/js/chat.js"></script> 
+</html>
