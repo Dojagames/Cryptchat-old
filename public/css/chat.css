@@ -13,6 +13,7 @@ html, body, #fullheight {
 
 body{
     display: block;
+    background-color: aqua;
 }
 
 
@@ -82,13 +83,20 @@ body{
 
 /* Bottom */
 
+
+
 #bottomSection{
     height: calc(100% - 80px);
+    display: flex;
+}
+
+.spacer{
+    width: 25%;
 }
 
 #chatDrawer{
     display: block;
-    width: 400px;
+    width: 15%;
     height: 100%;
     background-color: rgb(61, 61, 61);
     float: left;
@@ -96,7 +104,7 @@ body{
 
 #chatBox{
     display: block;
-    width: auto;
+    width: 35%;
     height: 100%;
     background-color: rgb(37, 37, 37);
     overflow: scroll;
@@ -217,12 +225,20 @@ body{
     padding-top: 15px;
 }
 
+.prevTxt{
+    font-size: calc(0.2vw + 60%);
+}
+
 
 
 
 @media screen and (orientation: portrait) {
     *{
         font-size: 32px;
+    }
+
+    .spacer {
+        display: none;
     }
 
     #topBar{
@@ -243,6 +259,7 @@ body{
     }
 
     #chatBox {
+        width: 100%;
         display: none;
     }
 
