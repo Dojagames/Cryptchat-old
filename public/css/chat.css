@@ -162,6 +162,35 @@ body{
     height: 1.2vh;
 }
 
+
+
+.internText {
+    padding-top: 7px; /* clean this!!!1! */
+    float: right;
+    font-size: 65%;
+    color: #888;
+    bottom: 0;
+    padding-left: 8px;
+}
+
+.imgBox{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(16, 17, 37);
+    margin: 0.5% 3% 0px 3%;
+    width: 40%;
+    border-style: hidden;
+    border-radius: 13px;
+} 
+
+.imgBox img{
+    width: 97%;
+    margin: 7px 5px;
+    border-style: hidden;
+    border-radius: 13px;
+}
+
+
 .leftBox{
     float: left;
 }
@@ -178,17 +207,6 @@ body{
 .rightBox .internText{
     color: rgb(43, 43, 43);
 }
-
-.internText {
-    padding-top: 7px; /* clean this!!!1! */
-    float: right;
-    font-size: 65%;
-    color: #888;
-    bottom: 0;
-    padding-left: 8px;
-}
-
-
 
 /* chat Drawer */
 
