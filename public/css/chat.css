@@ -109,6 +109,8 @@ body{
     background-color: hsl(235, 21%, 10%);
     overflow: scroll;
     overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 
@@ -161,8 +163,8 @@ body{
     height: 1.2vh;
 }
 
-.chatEndBox{
-    height: 50px;
+#chatEndBox{
+    height: 65px;
 }
 
 .internText {
@@ -263,22 +265,28 @@ body{
     max-height: 135px;
     bottom: 0;
     display: flex;
+    justify-content:center;
+    margin-bottom: 10px;
+}
+
+#sendDoc{
+    margin-right: calc(5% - 18.4px);
+    align-self: center;
+    height: 90%;
 }
 
 
 #txtBox{
     display: flex;
+    background-color: hsl(235, 21%, 10%);
     align-items: center;
     justify-content: center;
     align-self: center;
     width: 80%;
     min-height: 35px;
     max-height: 125px;
-
-
-    border: 1px solid #888;
+    border: 1px solid #888; 
     border-radius: 12px;
-    outline: none;
 }
 
  #txtBox textarea{
@@ -289,7 +297,20 @@ body{
     outline: none;
     width: 95%;
     height: 35px;
-    overflow: hidden;
+    overflow:hidden;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#txtBox textarea::-webkit-scrollbar {
+    display: none;
+}
+
+#sendChatBtn{
+    margin-left: calc(5% - 18.4px);
+    align-self: center;
+    height: 90%;
 }
 
 @media screen and (orientation: portrait) {
