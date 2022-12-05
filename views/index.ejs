@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Backup Viewer</title>
+        <title>CryptChat</title>
         <link rel="stylesheet" href="/css/chat.css">
     </head>
 
     <body>
-        
-        
         <div id = "topBar">
             <div id="chatVerticalBar">
                 <div id="topBackBtn" class="topBtn" onclick="openDrawer()">
@@ -39,7 +37,7 @@
             <!-- <input type="file" id="file-selector" accept=".txt" onchange="openFile(event)"> -->
         </div>
         <div id = "bottomSection">
-            <div class = spacer></div>
+            <div class = "spacer"></div>
             <div id = "chatDrawer"> 
                 <!-- <input type="file" id="file-selector" accept=".txt" onchange="openFile(event)"><br>
                 <button onClick="createDiv()">Create Element</button>
@@ -91,12 +89,31 @@
                         <img src="/resources/test.png">
                     </div>
                 </div>
+
+                <div class="msgWrapper">
+                    <div class="rightBox imgBox">
+                        
+                    </div>
+                </div>
+
+                <div class="chatEndBox"></div>
+
+                <div id="textBoxContainer">
+                    <div id="sendDoc"></div>
+                    <div id="txtBox">
+                        <textarea id="testtest">
+                            
+                        </textarea>
+                    </div>
+                    <div id="sendChatBtn"></div>
+                </div>
             </div>
             
-            <div class = spacer></div>
+            <div class ="spacer"></div>
         </div>
     
     </body>
 
     <script src="/js/chat.js"></script> 
+    <script src="/js/design.js"></script> 
 </html>
