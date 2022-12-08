@@ -1,4 +1,4 @@
-auto_grow(document.getElementById("tempId3232"));
+//auto_grow(document.getElementById("tempId3232"));
 
 function auto_grow(element) {
     element.style.height = "5px";

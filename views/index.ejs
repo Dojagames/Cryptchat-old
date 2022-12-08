@@ -26,7 +26,7 @@
             </div>
 
             <div id="horizontalBar">
-
+                <!-- <input type="file" id="file-selector" accept=".txt" onchange="openFile(event)"> -->
             </div>
 
             <div id="drawerVerticalBar">
@@ -42,7 +42,7 @@
                 <!-- <input type="file" id="file-selector" accept=".txt" onchange="openFile(event)"><br>
                 <button onClick="createDiv()">Create Element</button>
                 <div id="main-container"></div> -->
-                <div class="chatPrev" onclick="openChat()"> 
+                <div class="chatPrev activeChat" onclick="openChat()"> 
                     <img src="/resources/test.png" class="prevImg">
                     <div class="prevTextContainer">
                         <p class="nameTxt">Jonas</p>
@@ -73,6 +73,11 @@
             </div>
     
             <div id = "chatBox">
+                <div class="msgWrapper"> 
+                    <div class="bufferBox">
+
+                    </div>
+                </div>
                 <div class="msgWrapper">
                     <div class=" rightBox imgBox">
                         <img src="/resources/testImg1.jpg">
@@ -111,7 +116,9 @@
                 </div>
             </div>
             
-            <div class ="spacer"></div>
+            <div class ="spacer">
+                <img src="/resources/test.png" id="profileIcon">
+            </div>
         </div>
     
     </body>
