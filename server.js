@@ -14,4 +14,8 @@ app.get("/", (req, res) => {
 })
 
 
+app.get("/login", (req, res) => {
+    res.render("login.ejs");
+});
+
 app.listen(3000);   

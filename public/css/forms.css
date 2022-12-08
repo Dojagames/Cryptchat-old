@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #FFF;
+}
+
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+    
+
+    --spacer-width: 22.5%;
+    --drawer-width: 20%;
+    --chatbox-width: 35%;
+}
+
+body{
+    display: block;
+    background-image: url("../resources/wp.png");
+}
+
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    /* background-color: #434343; */
+}
+
+#container h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 400%;
+}
+
+#container form{
+    display: flow-root;
+
+}
+
+#container input{
+    margin: 20px calc(10% - 15px) 0 calc(10% - 15px);
+    width: 80%;
+    height: 30px;
+    background-color: #222;
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: #FFF;
+    padding: 1px 15px;
+    outline: none;
+}
+
+.activeForm {
+    border-color: hsl(212, 60%, 40%);
+}
+
+#container button{
+    margin: 20px 35% 0 35%;
+    width: 30%;
+    height: 30px;
+    background-color: hsl(212, 60%, 40%);
+    border-radius: 12px;
+    border-width: 0px;
+    padding: 1px 15px;
+    outline: none;
+}

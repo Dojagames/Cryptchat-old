@@ -76,12 +76,32 @@ body{
 }
 
 /* Spacer Space */
+#eventBar{
+    width: 52px;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    margin-left: calc(100% - var(--spacer-width) + 20px);
+    top: 50%;
+    transform: translate(0,-50%);
+    display: flow-root;
+}
+
+.eventBarIcon{
+    margin: 0 5px 20px 5px;
+}
+
+.eventBarIcon img{
+    width: 32px;
+}
+
 #profileIcon{
     width: 64px;
     height: 64px;
     border-radius: 50%;
     margin-right: 10px;
 }
+
 
 
 
