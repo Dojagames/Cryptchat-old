@@ -185,7 +185,7 @@ function DrawBuffer(){
 //document.getElementById("bottomSection").height = Vie
 
 
-function openChat(){
+function openChat(element){
     if(window.innerHeight > window.innerWidth){
         //vertical
         document.getElementById("chatVerticalBar").style.display = "flex";
@@ -195,6 +195,9 @@ function openChat(){
     } else {
         // horizontal
         document.getElementById("chatBox").style.display = "block";
+
+        //element
+
     }
 }
 

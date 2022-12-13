@@ -1,4 +1,7 @@
 function changeActive(element){
-    document.getElementsByClassName("activeForm").forEach((el) => el.classList.remove('hover'));
     element.classList.add("activeForm");
+}
+
+function removeActive(element){
+    element.classList.remove("activeForm")
 }

@@ -229,6 +229,10 @@ body{
     display: flex;
 }
 
+.chatPrev:not(.activeChat):hover{
+    background-color: hsla(212, 60%, 40%, 0.5);
+}
+
 .activeChat {
     background-color: hsl(212, 60%, 40%);
 }
