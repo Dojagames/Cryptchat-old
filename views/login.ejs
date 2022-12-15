@@ -8,10 +8,13 @@
         <div id="container">
             <h1>Login</h1>
             <form>
-                <input id="username" class="activeForm forms" type="text" onclick="changeActive(this)">
-                <input id="password" class="forms" type="password" onclick="changeActive(this)">
+                <input id="username" class="forms" type="text" onclick="changeActive(this)" onfocusout="reverseActive(this)">
+                <input id="password" class="forms" type="password" onclick="changeActive(this)" onfocusout="reverseActive(this)">
                 <button id="submitBtn" type="submit">Login</button>
             </form>
+        </div>
+        <div id="trademark" style=" position: absolute; bottom: 10px; left: 10px;">
+            <p>©Cryptchat 2022</p>
         </div>
     </body>
     <script src="js/forms/forms.js"></script>

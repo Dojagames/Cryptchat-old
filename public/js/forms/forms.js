@@ -1,4 +1,7 @@
 function changeActive(element){
-    document.getElementsByClassName("activeForm").forEach((el) => el.classList.remove('hover'));
-    element.classList.add("activeForm");
+    element.style.borderColor = "hsl(212, 60%, 40%)";
+}
+
+function reverseActive(element){
+    element.style.borderColor = "#FFF";
 }

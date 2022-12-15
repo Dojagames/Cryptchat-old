@@ -20,6 +20,15 @@ body{
     background-image: url("../resources/wp.png");
 }
 
+
+#trademark{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+
 #container{
     position: absolute;
     top: 50%;
@@ -53,9 +62,6 @@ body{
     outline: none;
 }
 
-.activeForm {
-    border-color: hsl(212, 60%, 40%);
-}
 
 #container button{
     margin: 20px 35% 0 35%;
