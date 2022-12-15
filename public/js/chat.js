@@ -197,7 +197,13 @@ function openChat(element){
         document.getElementById("chatBox").style.display = "block";
 
         //element
+        document.getElementById("chatWrapper").innerHTML = "";
+        
+        document.querySelectorAll('*').forEach(e => {
+            e.classList.remove("activeChat");
+        });
 
+        element.classList.add("activeChat");
     }
 }
 
