@@ -201,18 +201,25 @@ body{
 .upperDoc {
     margin: 2px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 5px;
     background-color: #00000022;
     border-radius: 12px;
 }
 
+.upperDoc:hover {
+    cursor: pointer;
+}
+
 .upperDoc img{
     width: 32px;
+    margin: 0 5px;
+    height: 32px;
 }
 
 .upperDoc p {
-    margin-left: 10px;
-    align-self: center;
+    text-align: center;
 }
 
 .lowerDoc p { /* timestamp for doc */
