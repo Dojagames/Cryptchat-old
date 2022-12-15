@@ -205,6 +205,12 @@ function openChat(element){
 
         element.classList.add("activeChat");
     }
+    //reorderDrawer(element);
+}
+
+function reorderDrawer(element){
+    const drawer = document.getElementById("chatDrawer");
+    drawer.insertBefore(element, drawer.children[0]);
 }
 
 
