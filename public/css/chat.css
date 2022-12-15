@@ -112,7 +112,6 @@ body{
     display:flow-root;
 }
 
-
 .systemMsg p{
     margin: 5px auto 2% auto;
     width: fit-content;
@@ -150,9 +149,6 @@ body{
     border-radius: 13px;
 }
 
-.bufferBox{
-    height: 1.2vh;
-}
 
 #chatEndBox{
     height: 65px;
@@ -160,7 +156,7 @@ body{
     bottom: 0;
 }
 
-.internText {
+.dateTxt {
     padding-top: 7px; /* clean this!!!1! */
     float: right;
     font-size: 65%;
@@ -179,10 +175,6 @@ body{
     border-radius: 13px;
 }
 
-.docBox{
-
-}
-
 .imgBox img{
     width: 97%;
     margin: 7px 5px;
@@ -195,6 +187,41 @@ body{
     padding-left: 4%;
 }
 
+
+.docBox{
+    width: 40%;
+    display: flow-root;
+    justify-content: space-around;
+    background-color: hsl(0, 0%, 18%);
+    border-style: hidden;
+    border-radius: 13px;
+    margin: 0.5% 3% 0px 3%;
+}
+
+.upperDoc {
+    margin: 2px;
+    display: flex;
+    padding: 10px 5px;
+    background-color: #00000022;
+    border-radius: 12px;
+}
+
+.upperDoc img{
+    width: 32px;
+}
+
+.upperDoc p {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.lowerDoc p { /* timestamp for doc */
+    float: right;
+    font-size: 65%;
+    color: #888;
+    padding: 0 10px 5px 0;
+}
+
 .leftBox{
     float: left;
 }
@@ -203,6 +230,11 @@ body{
     float: right;
     background-color: hsl(212, 60%, 40%);
 }
+
+.bufferBox{
+    height: 1.2vh;
+}
+
 
 /* .rightBox p{
     color: black;

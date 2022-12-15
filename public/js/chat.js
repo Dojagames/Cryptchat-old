@@ -147,7 +147,7 @@ function DrawMsg2(msg, time){
     }
     par.innerHTML = msg;
     var small = document.createElement("small");
-    small.className = "internText";
+    small.className = "dateTxt";
     small.innerHTML = time;
     div.appendChild(child).appendChild(par).appendChild(small);
     document.getElementById("chatBox").appendChild(div);
@@ -165,7 +165,7 @@ function DrawMsg1(msg, time){
     }
     par.innerHTML = msg;
     var small = document.createElement("small");
-    small.className = "internText";
+    small.className = "dateTxt";
     small.innerHTML = time;
     div.appendChild(child).appendChild(par).appendChild(small);
     document.getElementById("chatBox").appendChild(div);
